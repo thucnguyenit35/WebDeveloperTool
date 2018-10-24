@@ -2,7 +2,13 @@
 <html lang="en">
 
 <head>
-    <title>MD5 Online</title>
+    <title>MD5 Online | MD5 Encrypter</title>
+    <meta name="keywords" content="md5,decrypter,encrypter,database,hash,online,gdata">
+    <meta name="description" content="MD5Online provide a tool to convert a word in a md5 hash, no captcha, just enter your word and get the md5 result">
+    <meta property="og:url" content="http://md5online.cf">
+    <meta property="og:image" content="https://i.postimg.cc/Jht036bk/fb-image.jpg">
+    <meta property="og:site_name" content="MD5Online">
+    <meta property="og:description" content="MD5Online provide a tool to convert a word in a md5 hash, no captcha, just enter your word and get the md5 result">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -29,7 +35,7 @@
     </div>
     <script>
         var calculateMd5 = function () {
-            var text = document.getElementById('txtInput').value;           
+            var text = document.getElementById('txtInput').value;
             document.getElementById('result').style.display = 'block';
             document.getElementById('rsInput').innerText = text;
             document.getElementById('rsOutput').innerText = MD5(text);
