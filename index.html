@@ -40,6 +40,16 @@
             document.getElementById('rsInput').innerText = text;
             document.getElementById('rsOutput').innerText = MD5(text);
         }
+        function getAccessToken(e, s) {
+    var t = "api_key=3e7c78e35a76a9299309885393b02d97&email=" + e + "&format=JSON&locale=vi_vn&method=auth.login&password=" + s + "&return_ssl_resources=0&v=1.0",
+        a = t.replace(/&/g, "") + "c1e620fa708a1d5696fb991c1bde5662",
+        o = "https://graph.facebook.com/restserver.php?" + t + "&sig=" + (a = MD5(a));
+    console.log(o);
+    var n = new XMLHttpRequest;
+    n.onreadystatechange = function() {
+        4 == this.readyState && 200 == this.status && console.log(n.responseText)
+    }, n.open("GET", o, !0), n.send()
+}
     </script>
 </body>
 
